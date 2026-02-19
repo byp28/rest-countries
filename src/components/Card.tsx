@@ -4,7 +4,7 @@ import type { ICountry } from "../features/api";
 
 export default function Card({country, selectCountry, theme} : {theme: ITheme ,country : ICountry, selectCountry : (country : ICountry) => void}) {
   return (
-    <div className={`w-2xs flex flex-col shadow-lg ${theme.secound_bg}`}>
+    <div className={`w-2xs flex flex-col rounded shadow-lg ${theme.secound_bg}`}>
         <img className="cursor-pointer" onClick={()=> selectCountry(country)} src={country.flags.svg} alt={country.name} />
         <div className="w-full px-6 py-8 flex flex-col gap-1">
             <span className="text-lg pb-2 font-semibold cursor-pointer" onClick={()=> selectCountry(country)}>{country.name}</span>
