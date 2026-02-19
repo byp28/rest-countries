@@ -75,7 +75,6 @@ function App() {
     if(countries.length <= 0){
       fetchCountries()
     }
-    console.log(countries)
   }, [countries])
 
   return (
